@@ -1,4 +1,4 @@
-# gis-shipments-web
+# first-nuxt-app
 
 > My amazing Nuxt.js project
 
