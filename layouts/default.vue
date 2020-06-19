@@ -4,7 +4,28 @@
   </div>
 </template>
 
-<style>
+<style lang="less">
+.ant-layout {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.ant-layout-header {
+  background-color: #304ffe;
+  height: 55px;
+  padding: 0;
+  line-height: 2;
+  text-align: center;
+  font-size: 24px;
+  color: white;
+}
+
+.ant-layout-content {
+  background-color: #e8eaf6;
+}
+
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -17,7 +38,7 @@ html {
   box-sizing: border-box;
 }
 
-*,
+/**,
 *:before,
 *:after {
   box-sizing: border-box;
@@ -51,5 +72,5 @@ html {
 .button--grey:hover {
   color: #fff;
   background-color: #35495e;
-}
+} */
 </style>
