@@ -81,6 +81,20 @@ function hasErrors(fieldsError) {
 }
 
 export default {
+  beforeCreate() {
+    // const liff = window.liff
+    // liff.init(
+    //   { liffId: '1654303428-MvXPxLdr' },
+    //   () => {
+    //     if (liff.isLoggedIn()) {
+    //     //   this.getProfile()
+    //     } else {
+    //       liff.login()
+    //     }
+    //   },
+    //   (err) => console.error(err.code, err.message)
+    // )
+  },
   data() {
     return {
       hasErrors,
@@ -108,7 +122,7 @@ export default {
       e.preventDefault()
       this.form.validateFields((err, values) => {
         if (!err) {
-          console.log('Received values of form: ', values)
+          console.log('Received values of form: ', values, process.env.BASE_URL)
         }
       })
     }

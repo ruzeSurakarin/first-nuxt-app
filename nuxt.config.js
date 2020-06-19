@@ -14,7 +14,14 @@ export default {
         content: process.env.npm_package_description || ''
       }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    script: [
+      {
+        src: 'https://static.line-scdn.net/liff/edge/2/sdk.js',
+        type: 'text/javascript',
+        charset: 'utf-8'
+      }
+    ]
   },
   /*
    ** Customize the progress-bar color
@@ -27,7 +34,7 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ['@/plugins/antd-ui'],
+  plugins: ['@/plugins/antd-ui', '@/plugins/axios'],
   /*
    ** Nuxt.js dev-modules
    */
